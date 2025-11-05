@@ -32,7 +32,7 @@ color: white;
 }
 
 svg{
-    margin : 1rem 2rem 2rem 4rem auto;
+    margin : 1rem 2rem 2rem 4rem auto; /**Donne moi les positions auquelle s'appliquent ton margin pour chaque valeur***/
 }
 
 
@@ -72,10 +72,10 @@ svg{
 }
 
 .button{ 
-    position : absolute;
-    width: 7rem;
-    height: 1.5rem;
-  font-family: "Poppins", sans-serif;
+  position : absolute;
+  width: 7rem;
+  height: 1.5rem;
+  font-family: "Poppins", sans-serif; /**trouve comment reunir tout les atrribut font en un seul**/
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
@@ -87,8 +87,8 @@ svg{
   color : hsl(257, 40%, 49%); 
   top: 29rem;
   display: flex;
-    justify-content: center; 
-    align-items: center;
+  justify-content: center; 
+  align-items: center;
 }
 
 .link_rs{
@@ -137,4 +137,4 @@ border: 0.1rem solid white;
     }
 }
 
-/*I'm just looking for the git evolution*/
+/*I'm just looking for the git evolution*/ /***pas grand chose a dire ici**/
