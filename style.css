@@ -1,18 +1,45 @@
 /*Contenu général de mon CSS*/
+* {
+  box-sizing: border-box;
+}
 
-html{
-    font-size: 62.5%;
+html, body{
+    width : 1310px
 }
 
 body{
-background: hsl(257 40% 49%) url('images/bg-desktop.svg');
+background: hsl(257, 40%, 49%) url('images/bg-desktop.svg');
 color: white;
+background-repeat : no-repeat;
+background-size: cover;
 } 
 
-.attribution{
-    font-size: 1.1rem; 
-    text-align: center; 
+/*stylisation of the main part*/
+.main_containt{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    gap: 30px;
+    width: 100%;
 }
+
+.containt_left{
+    display: flex;
+    flex-direction : column;
+    justify-content: space-around;    
+}
+
+.logo {
+    margin: 25px;
+}
+
+.containt_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 .attribution a{
     color: hsl(228, 45%, 44%);
@@ -27,76 +54,63 @@ color: white;
 }
 
 .logo{
-    width: 100rem;
-    margin: 3rem 3rem;
+    width: ;
+    margin: ;
 }
 
-.svg{
-    margin : 1rem 4rem 2rem 4rem; /*:( j'avais fait une erreur... haut, bas, droit, gauche.*/
+.photo{
+    max-width: 1200px;
+    width : 100%;
 }
 
 
 .att{
-    position: relative;
-    top: 60rem;
+    
 }
 
-.photo{
-    width: 70rem;
-    position: absolute;
-    top: 10.5rem;
-    left: 5rem;
-}
 
 .text{
     width: 40rem;
     height: 12rem;
-    position: absolute;
-    top: 13rem;
-    left: 79rem;
+    
 }
 
 .main_t{
-    font : normal 600 3.5rem "Poppins", sans-serif;
-  top : 17rem;
+    font : normal 600 35px "Poppins", sans-serif;
+  
 }
 
 .presentation{
-    font : normal 200 1.2rem "Poppins", sans-serif;
+    font : normal 200 12px "Poppins", sans-serif;
 }
 
-.button{ 
-    position : absolute;
-    width: 7rem;
-    height: 1.5rem;
-    font : normal 300 1.5rem "Poppins", sans-serif; /*Tout regroupé en 1 seul*/
-  padding: 1.2rem 4rem;
+.button{
+    width: 70px;
+    height: 15px;
+    font : normal 300 15px "Poppins", sans-serif; /*Tout regroupé en 1 seul*/
+  padding: 12px 40px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
   border-radius: 3rem;
   background-color: white;
   color : hsl(257, 40%, 49%); 
-  top: 29rem;
   display: flex;
     justify-content: center; 
     align-items: center;
 }
 
 .link_rs{
-position: absolute;
-top: 65rem;
-left: 100rem;
+
 }
 
 .icone_cercle{
-width: 4rem;
-height: 4rem;
+width: 40px;
+height: 40px;
 border-radius: 50%;
-border: 0.1rem solid white;
+border: 1px solid white;
 display: inline-flex;
 justify-content: center;
 align-items: center;
-margin: 0 0.8rem;
 text-decoration: none;
 color: white;
 border: 0.1rem solid white;
@@ -122,7 +136,7 @@ border: 0.1rem solid white;
 
 /*Partie du css qui gère le responsive design*/
 
-@media screen and (max-width:375px){
+/*@media screen and (max-width:375px){
     body{
         background:hsl(257 40% 49%) url('images/bg-mobile.svg') no-repeat;
         background-size: 120rem 120rem;
@@ -134,12 +148,13 @@ border: 0.1rem solid white;
     }
 
     
-    .conteneur{
+    .conteneur{    
         position : relative;
         width:30rem;
         display: flex;
         flex-direction : column;
     }
+
     .photo{
     width: 10rem;
     position: absolute;
@@ -194,3 +209,4 @@ color: white;
 border: 0.1rem solid white;
 }
 }
+*/
